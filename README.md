@@ -24,3 +24,9 @@ Pour changer cette adresse sans modifier chaque bouton, ajouter l'attribut suiva
 ```bash
 npm test
 ```
+
+## Hébergement temporaire
+
+Chaque publication sur la branche `main` déclenche le déploiement GitHub Pages vers :
+
+`https://solufi.github.io/Rest-os_Web/`
