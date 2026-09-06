@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Rest-OS centralise la surveillance des températures, de l'humidité et des équipements pour les restaurants, cafés, boulangeries et cantines."
+    />
+    <meta name="theme-color" content="#171a18" />
+    <meta property="og:title" content="Rest-OS — Surveillez l'essentiel" />
+    <meta
+      property="og:description"
+      content="Une plateforme de monitoring claire pour vos espaces, vos équipements et vos opérations."
+    />
+    <meta property="og:type" content="website" />
+    <title>Rest-OS — Surveillance pour la restauration</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#accueil" aria-label="Rest-OS, accueil">
+        <span>Rest-OS</span>
+        <small>par Solufi</small>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navigation">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span></span><span></span>
+      </button>
+
+      <nav id="navigation" class="site-nav" aria-label="Navigation principale">
+        <a href="#surveillance">Surveillance</a>
+        <a href="#plateforme">Plateforme</a>
+        <a href="#fonctionnement">Fonctionnement</a>
+        <a href="#contact">Contact</a>
+        <a class="mobile-portal" data-portal-link href="https://portail.lagitane.ca">Portail Rest-OS ↗</a>
+      </nav>
+
+      <a class="button button-small header-portal" data-portal-link href="https://portail.lagitane.ca">
+        Portail Rest-OS
+        <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main id="contenu">
+      <section class="hero" id="accueil">
+        <div class="hero-copy">
+          <p class="eyebrow">Surveillance opérationnelle</p>
+          <h1>Voyez ce qui se passe. <em>Avant que ça devienne un problème.</em></h1>
+          <p class="hero-lead">
+            Rest-OS rassemble les données de vos capteurs et de vos équipements dans une vue simple,
+            pensée pour les restaurants, cafés, boulangeries et cantines.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#plateforme">Découvrir la plateforme</a>
+            <a class="text-link" href="#contact">Parler de votre installation <span aria-hidden="true">→</span></a>
+          </div>
+          <dl class="hero-facts" aria-label="Caractéristiques principales">
+            <div><dt>24/7</dt><dd>Suivi continu</dd></div>
+            <div><dt>Un seul écran</dt><dd>Pour tous vos sites</dd></div>
+            <div><dt>Alertes ciblées</dt><dd>Selon vos seuils</dd></div>
+          </dl>
+        </div>
+
+        <div class="monitor-preview" aria-label="Aperçu de la plateforme Rest-OS">
+          <div class="preview-topbar">
+            <div>
+              <strong>État des espaces</strong>
+              <span>Mis à jour à l'instant</span>
+            </div>
+            <span class="live-status"><i></i> Systèmes en ligne</span>
+          </div>
+
+          <div class="sensor-grid">
+            <article class="sensor-card sensor-card-primary">
+              <div class="sensor-heading">
+                <span>Cuisine froide</span>
+                <span class="status-tag">Normal</span>
+              </div>
+              <div class="temperature">
+                <strong>3,4</strong><span>°C</span>
+              </div>
+              <div class="range"><span style="width: 38%"></span></div>
+              <p>Plage cible&nbsp;: 1 à 5 °C</p>
+            </article>
+
+            <article class="sensor-card">
+              <div class="sensor-heading">
+                <span>Réserve sèche</span>
+                <span class="signal-bars" aria-label="Signal fort"><i></i><i></i><i></i></span>
+              </div>
+              <div class="metric-row"><strong>21,8 °C</strong><small>Température</small></div>
+              <div class="metric-row"><strong>46 %</strong><small>Humidité</small></div>
+            </article>
+
+            <article class="sensor-card alert-card">
+              <div class="sensor-heading">
+                <span>Congélateur bar</span>
+                <span class="status-tag status-watch">À vérifier</span>
+              </div>
+              <p class="alert-time">Détecté il y a 4 min</p>
+              <strong>Température en hausse</strong>
+              <p>Le seuil configuré a été dépassé.</p>
+            </article>
+          </div>
+
+          <div class="preview-footer">
+            <span><i class="dot dot-good"></i> 8 appareils actifs</span>
+            <span>Dernière relève&nbsp;: 10:42:18</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="client-strip" aria-label="Types d'établissements">
+        <p>Conçu pour les réalités de</p>
+        <ul>
+          <li>Restaurants</li>
+          <li>Cafés</li>
+          <li>Boulangeries</li>
+          <li>Cantines</li>
+          <li>Commerces alimentaires</li>
+        </ul>
+      </section>
+
+      <section class="section monitoring" id="surveillance">
+        <div class="section-intro">
+          <p class="eyebrow">L'essentiel, sans bruit</p>
+          <h2>Une lecture claire de vos installations.</h2>
+          <p>
+            Les bonnes données, au bon moment. Chaque appareil indique son état, sa dernière
+            transmission et les mesures qui comptent vraiment pour votre équipe.
+          </p>
+        </div>
+
+        <div class="feature-list">
+          <article>
+            <span class="feature-number">01</span>
+            <div>
+              <h3>Température et humidité</h3>
+              <p>Suivez les chambres froides, congélateurs, réserves et espaces sensibles depuis un même endroit.</p>
+            </div>
+          </article>
+          <article>
+            <span class="feature-number">02</span>
+            <div>
+              <h3>Alertes configurables</h3>
+              <p>Définissez un seuil pour chaque mesure et recevez une alerte lorsqu'une situation exige votre attention.</p>
+            </div>
+          </article>
+          <article>
+            <span class="feature-number">03</span>
+            <div>
+              <h3>État des appareils</h3>
+              <p>Confirmez la dernière transmission, la batterie, la qualité du signal et la disponibilité de chaque capteur.</p>
+            </div>
+          </article>
+          <article>
+            <span class="feature-number">04</span>
+            <div>
+              <h3>Historique utile</h3>
+              <p>Consultez l'évolution des mesures afin de repérer une tendance ou documenter un incident.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section platform-section" id="plateforme">
+        <div class="platform-copy">
+          <p class="eyebrow eyebrow-light">La plateforme</p>
+          <h2>Votre exploitation, réunie au même endroit.</h2>
+          <p>
+            Rest-OS ne s'arrête pas aux capteurs. La plateforme est conçue pour relier la surveillance
+            technique aux opérations quotidiennes et donner à chaque personne la bonne information.
+          </p>
+          <a class="button button-light" data-portal-link href="https://portail.lagitane.ca">Accéder au portail <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="capabilities">
+          <article>
+            <span class="capability-mark">M</span>
+            <h3>Monitoring</h3>
+            <p>Capteurs, passerelles, alertes et état de vos installations.</p>
+          </article>
+          <article>
+            <span class="capability-mark">O</span>
+            <h3>Opérations</h3>
+            <p>Tâches, listes d'ouverture et de fermeture, documents et suivi d'équipe.</p>
+          </article>
+          <article>
+            <span class="capability-mark">R</span>
+            <h3>Restauration</h3>
+            <p>Réservations, plans de salle, recettes, inventaire et achats.</p>
+          </article>
+          <article>
+            <span class="capability-mark">D</span>
+            <h3>Données</h3>
+            <p>Ventes, tendances, rapports et intégrations adaptées à votre environnement.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section how-it-works" id="fonctionnement">
+        <div class="section-intro compact">
+          <p class="eyebrow">Déploiement</p>
+          <h2>Du capteur à votre écran.</h2>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <span>1</span>
+            <h3>Installer</h3>
+            <p>La passerelle Rest-OS rejoint votre réseau et détecte les appareils compatibles à proximité.</p>
+          </li>
+          <li>
+            <span>2</span>
+            <h3>Nommer</h3>
+            <p>Associez chaque capteur à un espace ou un équipement compréhensible par toute l'équipe.</p>
+          </li>
+          <li>
+            <span>3</span>
+            <h3>Surveiller</h3>
+            <p>Consultez les mesures en direct et choisissez les seuils qui déclenchent une notification.</p>
+          </li>
+          <li>
+            <span>4</span>
+            <h3>Agir</h3>
+            <p>Votre équipe reçoit une information précise et peut intervenir avant que la situation s'aggrave.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="gateway-band">
+        <div>
+          <p class="eyebrow">Passerelle Rest-OS</p>
+          <h2>Un point de liaison discret, gérable à distance.</h2>
+        </div>
+        <ul>
+          <li><i class="dot dot-good"></i> État et disponibilité</li>
+          <li><i class="dot dot-good"></i> Mises à jour à distance</li>
+          <li><i class="dot dot-good"></i> Diagnostic réseau</li>
+          <li><i class="dot dot-good"></i> Accès de maintenance temporaire</li>
+        </ul>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Votre établissement</p>
+          <h2>Commençons par ce que vous devez surveiller.</h2>
+        </div>
+        <div class="contact-copy">
+          <p>
+            Un frigo, plusieurs espaces ou un réseau de succursales&nbsp;: nous pouvons définir une
+            installation adaptée à votre réalité.
+          </p>
+          <a class="button" href="mailto:info@solufi.ca?subject=Projet%20Rest-OS">Écrire à l'équipe</a>
+          <a class="text-link" href="tel:+14508040221">450 804-0221</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <strong>Rest-OS</strong>
+        <p>Une solution de surveillance et d'opérations développée au Québec par <a href="https://solufi.ca">Solufi</a>.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#surveillance">Surveillance</a>
+        <a href="#plateforme">Plateforme</a>
+        <a data-portal-link href="https://portail.lagitane.ca">Portail Rest-OS</a>
+      </div>
+      <p class="legal-note">
+        Rest-OS est une plateforme de surveillance et de suivi opérationnel. Elle ne remplace pas un
+        système d'alarme certifié ni les vérifications humaines requises. © <span data-year></span> Solufi inc.
+      </p>
+    </footer>
+  </body>
+</html>
