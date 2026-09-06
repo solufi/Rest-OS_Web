@@ -6,11 +6,19 @@ const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
 const css = await readFile(new URL("../styles.css", import.meta.url), "utf8");
 
 test("la page contient les sections et appels à l'action principaux", () => {
-  for (const id of ["accueil", "surveillance", "plateforme", "fonctionnement", "contact"]) {
+  for (const id of ["accueil", "surveillance", "plateforme", "fonctionnement", "tarification", "contact"]) {
     assert.match(html, new RegExp(`id=["']${id}["']`));
   }
   assert.match(html, /Portail Rest-OS/);
   assert.match(html, /data-portal-link/);
+});
+
+test("la tarification distingue les frais initiaux de l'abonnement", () => {
+  assert.match(html, /1 000 \$/);
+  assert.match(html, /frais unique/);
+  assert.match(html, /200 \$/);
+  assert.match(html, /par mois/);
+  assert.match(html, /Tarification indicative/);
 });
 
 test("le contenu couvre les mesures de surveillance essentielles", () => {
