@@ -29,4 +29,4 @@ npm test
 
 Chaque publication sur la branche `main` déclenche le déploiement GitHub Pages vers :
 
-`https://solufi.github.io/Rest-os_Web/`
+`https://solufi.github.io/Rest-OS_Web/`
