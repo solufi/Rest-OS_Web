@@ -28,6 +28,18 @@ test("le contenu couvre les mesures de surveillance essentielles", () => {
   assert.match(html, /Passerelle Rest-OS/);
 });
 
+test("le haut de page présente toute la plateforme opérationnelle", () => {
+  assert.match(html, /Tout votre restaurant/);
+  assert.match(html, /Achalandage et prévisions/);
+  assert.match(html, /coûts de recettes/i);
+  assert.match(html, /inventaire/i);
+  assert.match(html, /horaires et réservations/i);
+  assert.match(html, /frigos et celliers/i);
+  assert.match(html, /tamisez l'éclairage/i);
+  assert.match(html, /gérez le chauffage/i);
+  assert.match(html, /Vue d'ensemble/);
+});
+
 test("la mise en page inclut une adaptation mobile et le mouvement réduit", () => {
   assert.match(css, /@media \(max-width: 720px\)/);
   assert.match(css, /prefers-reduced-motion/);
